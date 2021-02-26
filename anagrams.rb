@@ -1,22 +1,22 @@
 
 words =  ['demo', 'none', 'tied', 'evil', 'dome', 'mode', 'live',
     'fowl', 'veil', 'wolf', 'diet', 'vile', 'edit', 'tide',
-    'flow', 'neon']
+    'flow', 'neon', 'flow', 'vile', 'mine']
 
 results = {}
 
 words.each do |word|
     key = word.split('').sort.join()
 
-    if result.has_key(key)
-        result[key].push(word)
+    if results.has_key?(key)
+        results[key].push(word)
     else 
-        result[key] = [word]
+        results[key] = [word]
     end 
 end 
 
-result.each do |v|
-    puts _ _ _ _ _ _ _ _ _
+results.each do |v|
+    puts " _ _ _ _ _ _ _ _ _"
      p v 
 end 
 
